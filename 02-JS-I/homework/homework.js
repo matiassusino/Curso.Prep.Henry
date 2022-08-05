@@ -38,7 +38,8 @@ function suma(x, y) {
   // Suma "x" e "y" juntos y devuelve el valor
   // Tu código:
 
-  
+
+  return (x + y);
   
 }
 
