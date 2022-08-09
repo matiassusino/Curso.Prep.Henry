@@ -280,12 +280,16 @@ function obtenerSaludo(nombre) {
   // "Martin" -> "Hola Martin!"
   // Tu código:
   
+  return ("Hola" + " " + nombre + "!");
+
 }
 
 function obtenerAreaRectangulo(alto, ancho) {
   // Retornar el area de un rectángulo teniendo su altura y ancho
   // Tu código:
   
+return (alto * ancho);
+
 }
 
 
@@ -293,12 +297,16 @@ function retornarPerimetro(lado){
   //Escibe una función a la cual reciba el valor del lado de un cuadrado y retorne su perímetro.
   //Escribe tu código aquí
   
+return (lado * 4);
+
 }
 
 
 function areaDelTriangulo(base, altura){
   //Desarrolle una función que calcule el área de un triángulo.
   //Escribe tu código aquí
+
+return ((base * altura) / 2);
 
 }
 
@@ -308,6 +316,8 @@ function deEuroAdolar(euro){
   //como parámetro un número de euros y calcule el cambio en dólares.
   //Escribe tu código aquí
   
+return (euro * 1.20);
+
 }
 
 
@@ -318,6 +328,22 @@ function esVocal(letra){
   // Si no es vocal, tambien debe devolver "Dato incorrecto".
   //Escribe tu código aquí
   
+  if (letra === "a", "e", "i", "o","u"){
+
+    return "Es vocal";
+  
+  }
+  
+  else if (letra + letra){
+  
+    return "Dato incorrecto";
+  
+  }
+  
+  else return 
+  
+  "Dato incorrecto";
+
 }
 
 
