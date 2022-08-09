@@ -253,6 +253,7 @@ function esPositivo(numero) {
   else
   
   return "Es positivo";
+  
 
 }
 
