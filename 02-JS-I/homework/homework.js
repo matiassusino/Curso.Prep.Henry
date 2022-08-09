@@ -239,21 +239,20 @@ function esPositivo(numero) {
   //Si el número es negativo, devolver ---> "Es negativo"
   //Si el número es 0, devuelve false
   
-  if (num === 0) {
+  if (numero === 0) {
 
     return false;
   }
-  
-  else if (num < 0) {
-  
+ 
+  else if (numero < 0) {
+
     return "Es negativo";
-  
+
   }
-  
-  else
-  
-  return "Es positivo";
-  
+
+else 
+
+return "Es positivo";
 
 }
 
@@ -261,6 +260,10 @@ function agregarSimboloExclamacion(str) {
   // Agrega un símbolo de exclamación al final de la string "str" y devuelve una nueva string
   // Ejemplo: "hello world" pasaría a ser "hello world!"
   // Tu código:
+
+
+ return (str + "!");
+
 }
 
 function combinarNombres(nombre, apellido) {
@@ -268,6 +271,8 @@ function combinarNombres(nombre, apellido) {
   // Ejemplo: "Soy", "Henry" -> "Soy Henry"
   // Tu código:
   
+  return (nombre + " " + apellido);
+
 }
 
 function obtenerSaludo(nombre) {
