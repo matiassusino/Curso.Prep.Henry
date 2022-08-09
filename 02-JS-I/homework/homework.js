@@ -154,6 +154,17 @@ function esPar(num) {
   // De lo contrario, devuelve "false"
   // Tu código:
   
+  if (num % 2 === 0) {
+
+    return true;
+
+  }
+
+else 
+
+return false;
+
+
 }
 
 function esImpar(num) {
@@ -161,6 +172,16 @@ function esImpar(num) {
   // De lo contrario, devuelve "false"
   // Tu código:
   
+if (num % 3 === 1){
+
+  return true;
+}
+
+else 
+
+return false;
+
+
 }
 
 function elevarAlCuadrado(num) {
@@ -168,6 +189,8 @@ function elevarAlCuadrado(num) {
   // ojo: No es raiz cuadrada!
   // Tu código:
   
+return Math.pow (num , 2);
+
 }
 
 function elevarAlCubo(num) {
