@@ -7,7 +7,7 @@ const nuevaString = "primer cambio";
 const nuevoNum = 1;
 
 // Crea una variable booleana:
-const nuevoBool = 1 < 3;
+const nuevoBool = true;
 
 // Resuelve el siguiente problema matemático:
 const nuevaResta = 10 - 5 === 5;
@@ -280,7 +280,7 @@ function obtenerSaludo(nombre) {
   // "Martin" -> "Hola Martin!"
   // Tu código:
   
-  return ("Hola" + " " + nombre + "!");
+  return 'Hola ' + nombre + '!';
 
 }
 
@@ -328,21 +328,13 @@ function esVocal(letra){
   // Si no es vocal, tambien debe devolver "Dato incorrecto".
   //Escribe tu código aquí
   
-  if (letra === "a", "e", "i", "o","u"){
-
-    return "Es vocal";
-  
+  if(letra.length > 1){
+    return "Dato incorrecto"
   }
-  
-  else if (letra + letra){
-  
-    return "Dato incorrecto";
-  
+  if(letra === "a" || letra === "e" || letra === "i" || letra === "o" || letra === "u"){
+    return "Es vocal"
   }
-  
-  else return 
-  
-  "Dato incorrecto";
+  return "Dato incorrecto"
 
 }
 
