@@ -9,6 +9,7 @@ function obtenerMayor(x, y) {
   if (x === y && y ===x){
 
     return Math.random (x, y);
+    
   }
 
 }
