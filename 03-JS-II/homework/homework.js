@@ -5,6 +5,12 @@ function obtenerMayor(x, y) {
   // Devuelve el número más grande
   // Si son iguales, devuelve cualquiera de los dos
   // Tu código:
+
+  if (x === y && y ===x){
+
+    return Math.random (x, y);
+  }
+
 }
 
 function mayoriaDeEdad(edad) {
@@ -28,6 +34,9 @@ function saludo(idioma) {
   // Si "idioma" es "ingles", devuelve "Hello!"
   // Si "idioma" no es ninguno de los anteiores o es `undefined` devuelve "Hola!"
   // Tu código:
+
+
+
 }
 
 function colors(color) {
