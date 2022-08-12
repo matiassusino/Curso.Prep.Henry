@@ -1,5 +1,7 @@
 // No cambies los nombres de las funciones.
 
+const { numeroRandom } = require("../../02-JS-I/homework/homework");
+
 function obtenerMayor(x, y) {
   // "x" e "y" son números enteros (int).
   // Devuelve el número más grande
@@ -150,13 +152,7 @@ function esDiezOCinco(numero) {
   // De lo contrario, devuelve "false"
   // Tu código:
 
-if (numero === 10 || 5){
-
-  console.log (true);
-
-}
-
-
+  return numero === 10 || numero === 5;
 
 }
 
@@ -164,6 +160,12 @@ function estaEnRango(numero) {
   // Devuelve "true" si "numero" es menor que 50 y mayor que 20
   // De lo contrario, devuelve "false"
   // Tu código:
+
+
+return numero < 50 && numero > 20;
+
+
+
 }
 
 function esEntero(numero) {
@@ -174,6 +176,9 @@ function esEntero(numero) {
   // De lo contrario, devuelve "false"
   // Pista: Puedes resolver esto usando `Math.floor`
   // Tu código:
+
+
+return numero === Math.floor; 
 }
 
 function fizzBuzz(numero) {
