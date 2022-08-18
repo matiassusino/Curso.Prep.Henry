@@ -8,12 +8,11 @@ function obtenerMayor(x, y) {
   // Si son iguales, devuelve cualquiera de los dos
   // Tu código:
 
-return Math.max (x, y);
+  if(x > y) {
+    return x;
+  }
+  return y;
 
-if (x === y){
-
-  return Math.random (x, y);
-}
 
 }
 
@@ -29,10 +28,10 @@ if (edad >= 18){
 
 }
  
-else if (edad < 18){
+else
 
   return "Not allowed";
-}
+
 
 
 
@@ -58,7 +57,7 @@ else if (status === 2)
 
   return "Away";
 
-  else (status !== 1 || status !== 2) 
+  else 
 
     return "Offline";
 
@@ -79,27 +78,15 @@ function saludo(idioma) {
   // Tu código:
 
 
-if (idioma !== ("aleman" || "mandarin" || "ingles" || "undefined")){
-
-  return "Hola!";
-}
-
-else if (idioma === "aleman"){
-
-  return "Guten tag!";
-
-}
-
-else if (idioma === "mandarin") {
-
-  return "Ni Hao!";
-
-}
-
-else (idioma === "ingles") 
-
-  return "Hello!"
-
+  if(idioma === 'aleman') {
+    return 'Guten Tag!';
+  } else if (idioma === 'mandarin') {
+    return 'Ni Hao!';
+  } else if (idioma === 'ingles') {
+    return 'Hello!';
+  } else {
+    return 'Hola!';
+  }
 
 
 }
@@ -113,34 +100,18 @@ function colors(color) {
   //Caso default: devuelve --> "Color not found"
   //Usar el statement Switch.
 
-
-if (color != "blue" || "red" || "green" || "orange"){
-
-  return "Color not found";
-
-} 
-
-else if (color === blue){
-
-  return "This is blue";
-
-}
-
-else if (color === red){
-
-  return "This is red";
-
-}
-
-else if (color === green){
-
-  return "This is green";
-
-}
-
-else (color === orange)
-
-return "This is orange"
+  switch(color) {
+    case "blue":
+      return "This is blue";
+    case "red": 
+      return "This is red";
+    case "green":
+      return "This is green";
+    case "orange":
+      return "This is orange";
+    default: 
+    return "Color not found";
+  }
 
 
 
@@ -178,7 +149,7 @@ function esEntero(numero) {
   // Tu código:
 
 
-return numero === Math.floor; 
+return numero % 1 === 0; 
 
 }
 
@@ -188,24 +159,10 @@ function fizzBuzz(numero) {
   // Si "numero" es divisible entre 3 y 5 (ambos), devuelve "fizzbuzz"
   // De lo contrario, devuelve el numero
 
-if (numero % 3 === 0){
-
-  return "fizz";
-}
-
-else if (numero % 5 === 0){
-
-  return "buzz";
-
-}
-else if (numero % 3 && numero % 5 === 0){
-
-  return "fizzbuzz"
-}
-
-else 
-
-return numero; 
+  if(numero % 15 === 0) return 'fizzbuzz';
+  if(numero % 3 === 0) return 'fizz';
+  if(numero % 5 === 0) return 'buzz';
+  return numero;
 
 }
 
@@ -217,26 +174,21 @@ function operadoresLogicos(num1, num2, num3) {
   //0 no es ni positivo ni negativo. Si alguno de los argumentos es 0, retornar "Error".
   //Si no se cumplen ninguna de las condiciones anteriores, retornar false. 
 
-  if (num1 > num2 && num3 && num1 > 0){
-
+  if(num1 < 0 || num2 < 0 || num3 < 0) {
+    return "Hay negativos";
+  }
+  else if(num1 === 0 || num2 === 0 || num3 === 0) {
+    return "Error";
+  }
+  else if(num1 > 0 && num1 > num2 && num1 > num3) {
     return "Número 1 es mayor y positivo";
   }
-  
-  else if (num1 < 0 || num2 < 0 || num3 < 0){
-  
-    return "Hay negativos";
-    
+  else if(num3 > num1 && num3 > num2) {
+    return num3 + 1;
   }
-
-  else if (num3 > num1 || num3 > num2){
-
-    return (num3 + 1);
-
-  }
-
-else (num1 === 0 || num2 === 0 || num3 === 0)
-
-  return "Error"; 
+  else {
+    return false;
+  } 
 
 
 }
@@ -267,14 +219,10 @@ function esVerdadero(valor){
   //si su valor es true y “Soy falso” si su valor es false.
   //Escribe tu código aquí
 
-if (valor > 2){
-
-  return "Soy verdadero";
-}
-
-else 
-
-return "Soy falso";
+  if(valor === true){
+    return "Soy verdadero"
+  }
+  return "Soy falso"
 
 
 }
@@ -283,27 +231,40 @@ function tablaDelSeis(){
   //Escribe una función que muestre la tabla de multiplicar del 6 (del 0 al 60).
   //La función devuelve un array con los resultados de la tabla de multiplicar del 6 en orden creciente.
   //Escribe tu código aquí   
-
-
-for (var i = 0 ; i <= 60 ; i++ * 6)
-
-
-console.log(i);
-
-
+ 
+  let arrayTablaDel6 = []
+  for (let i = 0; i < 11; i++) {
+        arrayTablaDel6.push(6 * i)
+  }
+  return arrayTablaDel6
 
 }
 
 function tieneTresDigitos(numero){
   //Leer un número entero y retornar true si tiene 3 dígitos. Caso contrario, retorna false.
   //Escribe tu código aquí
-  
+
+  if(numero > 99 && numero < 1000){
+    return true
+  }
+  return false
+
 }
 
 function doWhile(numero) {
   //Implementar una función tal que vaya aumentando el valor recibido en 5 hasta un límite de 8 veces
   //Retornar el valor final.
   //Usar el bucle do ... while.
+
+  var a = numero;
+  var i = 0;
+  do {
+    i = i + 1;
+    a = a + 5;
+  }
+  while(i < 8);
+  return a;
+
 }
 
 
