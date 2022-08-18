@@ -209,7 +209,6 @@ function esPrimo(numero) {
   }
   return true;
 
-
 }
 
 
