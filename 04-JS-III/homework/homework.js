@@ -92,9 +92,10 @@ function dePalabrasAFrase(palabras) {
   // Ejemplo: ['Hello', 'world!'] -> 'Hello world!'
   // Tu código:
 
+  return palabras.join(' ');
+ 
 
-  dfcsd
-  
+
 }
 
 
@@ -102,7 +103,13 @@ function arrayContiene(array, elemento) {
   // Comprueba si el elemento existe dentro de "array"
   // Devuelve "true" si está, o "false" si no está
   // Tu código:
-}
+
+  
+
+    return "true";
+
+  }
+
 
 
 function agregarNumeros(numeros) {
